@@ -1,0 +1,768 @@
+2026-02-21 23:03:55 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:03:55 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:05:09 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:05:09 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:05:10 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:05:10 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:05:10 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:05:10 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:11:16 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:11:16 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:11:16 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:11:16 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:11:17 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:11:17 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:11:17 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:11:17 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:11:17 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:11:17 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:17:45 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:17:46 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:17:47 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:17:47 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:17:48 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:17:48 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:17:48 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:17:48 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:17:49 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:19:33 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:19:35 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-02-21 23:19:35 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-03-01 14:33:23 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
+2026-03-01 14:35:35 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Crawler.crawl_async() done, defined at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py:163> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 181, in crawl_async
+    self.spider = self._create_spider(*args, **kwargs)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 194, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spiders\__init__.py", line 75, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\ADMIN\Desktop\Scrapy\scraper\scraper\spiders\business_spider.py", line 41, in __init__
+    raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ADMIN\\Desktop\\Scrapy\\scraper\\urls.txt'
