@@ -7,9 +7,11 @@ NEWSPIDER_MODULE = "scraper.spiders"
 
 # --- Polite crawling defaults ---
 ROBOTSTXT_OBEY = True
-DOWNLOAD_DELAY = 1
 CONCURRENT_REQUESTS = 8
 CONCURRENT_REQUESTS_PER_DOMAIN = 4
+DEPTH_LIMIT = 1
+DOWNLOAD_DELAY = 1
+CLOSESPIDER_PAGECOUNT = 5
 
 # --- Disable features that conflict with subprocess usage ---
 TELNETCONSOLE_ENABLED = False

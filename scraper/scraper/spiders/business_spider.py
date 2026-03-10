@@ -30,22 +30,25 @@ class BusinessSpider(scrapy.Spider):
         ("pinterest", re.compile(r"https?://(?:www\.)?pinterest\.com/[^\s\"'<>]+")),
     ]
 
-    def __init__(self, urls_file: str = "urls.txt", *args, **kwargs):
+    def __init__(self, url=None, urls_file=None, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        urls_path = Path(urls_file)
-        if not urls_path.is_absolute():
-            # Resolve relative to the scraper project root (where scrapy.cfg lives)
-            urls_path = Path(__file__).resolve().parents[2] / urls_file
 
-        self.logger.info("Loading URLs from %s", urls_path)
-        raw_urls = urls_path.read_text(encoding="utf-8").strip().splitlines()
-        self.start_urls = [u.strip() for u in raw_urls if u.strip()]
+        if url:
+            self.start_urls = [url]
+        elif urls_file:
+            urls_path = Path(urls_file)
 
-        # Restrict crawling to only the provided domains
+            if not urls_path.is_absolute():
+                urls_path = Path(__file__).resolve().parents[2] / urls_file
+
+            raw_urls = urls_path.read_text(encoding="utf-8").splitlines()
+            self.start_urls = [u.strip() for u in raw_urls if u.strip()]
+        else:
+            self.start_urls = []
+
         self.allowed_domains = list(
             {urlparse(u).netloc for u in self.start_urls if urlparse(u).netloc}
         )
-        self.logger.info("Allowed domains: %s", self.allowed_domains)
 
     # ------------------------------------------------------------------
     # Parsing
